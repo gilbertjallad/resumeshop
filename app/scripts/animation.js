@@ -16,7 +16,30 @@ normalScrollElements: '#nav',
 paddingTop: 0,
 paddingBottom: 0,
 responsiveWidth: 640,
-css3: true
+css3: true,
+
+onLeave: function(index, nextIndex, direction){
+if (index == 2) {
+   $('#firstCard').addClass('animated bounceInRight');
+}
+if (index == 3) {
+   $('#firstCard').removeClass('animated bounceInRight bounceInLeft');
+}
+if (index == 4) {
+   $('#firstCard').addClass('animated bounceInLeft');
+}
+	}
+
+
 
 	});
+});
+$(document).on('click', '#sidenav', '.drag-target', function(e) {
+//in responsive mode?
+      if($('.fp-responsive').length){
+
+$('body').css('overflow', 'visible');
+
+}
+
 });

@@ -27,3 +27,26 @@ body {
   line-height: 1;
   letter-spacing: -1px;
 }
+
+/*fullpage.js styling*/
+#fullpage { position: fixed; overflow: "automatic"; }
+/*makes sure sidebar is clickable*/
+#sidenav-overlay {z-index: 90}
+/*keeps navbar with page*/
+#nav { position: fixed;
+top: 0;
+left: 0;
+display: block;
+z-index: 99;
+}
+/*stylesheets for sections*/
+#sa, #sc, #se { background: #ffebee; }
+#sb, #sd { background: #ffcdd2; }
+
+
+.line {
+  fill: none;
+  stroke: purple;
+  stroke-width: 4px;
+}
+
