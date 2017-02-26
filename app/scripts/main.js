@@ -29,7 +29,7 @@ if (nextIndex == 3) {
 
 function lineChart(){
 
-d3.select("#graph").selectAll("*").remove();
+d3.select('#graph').selectAll('*').remove();
 
 // set the dimensions and margins of the graph
 var margin = {top: 100, right: 50, bottom: 30, left: 50},
@@ -51,7 +51,7 @@ var valueline = d3.line()
 // append the svg obgect to the body of the page
 // appends a 'group' element to 'svg'
 // moves the 'group' element to the top left margin
-var svg = d3.select('graph').append('svg')
+var svg = d3.select('#graph').append('svg')
     .attr('width', width + margin.left + margin.right)
     .attr('height', height + margin.top + margin.bottom)
   .append('g')
@@ -96,3 +96,27 @@ d3.csv('data.csv', function(error, data) {
 
 	}
 
+// Bar graph JS
+setTimeout(function start (){
+  
+  $('.bar').each(function(i){  
+    var $bar = $(this);
+    $(this).append('<span class="count"></span>')
+    setTimeout(function(){
+      $bar.css('width', $bar.attr('data-percent'));      
+    }, i*100);
+  });
+
+$('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).parent('.bar').attr('data-percent')
+    }, {
+        duration: 2000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now) +'%');
+        }
+    });
+});
+
+}, 500)

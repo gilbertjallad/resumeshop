@@ -28,12 +28,31 @@ if (index == 3) {
 if (index == 4) {
    $('#firstCard').addClass('animated bounceInLeft');
 }
+if (index == 1) {
+   $('#secondCard').addClass('animated bounceInRight');
+}
+if (index == 2) {
+   $('#secondCard').removeClass('animated bounceInRight bounceInLeft');
+}
+if (index == 3) {
+   $('#secondCard').addClass('animated bounceInLeft');
+}
+if (index == 1) {
+   $('#thirdCard').addClass('animated bounceInRight');
+}
+if (index == 2) {
+   $('#thirdCard').removeClass('animated bounceInRight bounceInLeft');
+}
+if (index == 3) {
+   $('#thirdCard').addClass('animated bounceInLeft');
+}
 	}
 
 
 
 	});
 });
+
 $(document).on('click', '#sidenav', '.drag-target', function(e) {
 //in responsive mode?
       if($('.fp-responsive').length){
@@ -43,3 +62,9 @@ $('body').css('overflow', 'visible');
 }
 
 });
+
+
+// carousel
+$(document).ready(function(){
+      $('.carousel').carousel();
+    });

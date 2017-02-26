@@ -13,19 +13,29 @@ body {
 
 .hero-unit {
   margin: 50px auto 0 auto;
-  width: 300px;
+  width: 400px;
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
   background-color: #eee;
-  border-radius: 6px;
+  border-radius: 10px;
   padding: 60px;
 }
 
-.hero-unit h1 {
-  font-size: 60px;
+.hero-unit h3 {
+  font-size: 30px;
   line-height: 1;
   letter-spacing: -1px;
+}
+.text{
+  margin: 50px auto 0 auto;
+  width: 800px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 60px;
 }
 
 /*fullpage.js styling*/
@@ -38,10 +48,11 @@ top: 0;
 left: 0;
 display: block;
 z-index: 99;
+background-color:black;
 }
 /*stylesheets for sections*/
-#sa, #sc, #se { background: #ffebee; }
-#sb, #sd { background: #ffcdd2; }
+#sa, #sc, #se { background: #c3c3c3; }
+#sb, #sd { background: #747474; }
 
 
 .line {
@@ -49,4 +60,5 @@ z-index: 99;
   stroke: purple;
   stroke-width: 4px;
 }
+
 
