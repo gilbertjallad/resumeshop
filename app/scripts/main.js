@@ -22,6 +22,9 @@ onLeave: function(index, nextIndex, direction){
 if (nextIndex == 3) {
       lineChart();
    }
+   if (nextIndex == 4) {
+
+   }
 }
 
 	});
@@ -32,7 +35,7 @@ function lineChart(){
 d3.select('#graph').selectAll('*').remove();
 
 // set the dimensions and margins of the graph
-var margin = {top: 100, right: 50, bottom: 30, left: 50},
+var margin = {top: 200, right: 100, bottom: 50, left: 100},
     width = $(window).width() - margin.left - margin.right,
     height = $(window).height() - margin.top - margin.bottom;
 

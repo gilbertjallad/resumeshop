@@ -3,16 +3,24 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
+
+
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
   <link rel="stylesheet" href="/bower_components/materialize/bin/materialize.css" />
   <link rel="stylesheet" href="/bower_components/fullpage.js/dist/jquery.fullpage.css" />
   <!-- endbower -->
-
   <!-- endbuild -->
-  <link rel="stylesheet" href="styles/main.css">
+
   <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/graph.css">
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
 </head>
 <body>
  <nav id="nav">
@@ -22,6 +30,7 @@
    <li data-menuanchor="b"><a href="#b">Project Two</a></li>
    <li data-menuanchor="c"><a href="#c">Project Three</a></li>
    <li data-menuanchor="d"><a href="#d">Project Four</a></li>
+   <li data-menuanchor="e"><a href="#e">Project Five</a></li>
 </ul>
 <!-- quick-links -->
 <ul id="quick-links" class="right">
@@ -37,6 +46,10 @@
   <div id="fullpage">
 
     <div id="sa" class="section">
+    
+    <div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
        <div class="carousel">
           <a class="carousel-item" href="#one!"><img src="http://lorempixel.com/250/250/nature/1"></a>
           <a class="carousel-item" href="#two!"><img src="http://lorempixel.com/250/250/nature/2"></a>
@@ -47,55 +60,71 @@
       
     </div>
     <div id="sb" class="section">
+    <div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
             <div class="card horizontal" id="thirdCard">
                 <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="images/code.jpg">
                 </div>
                 <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                <span class="card-title activator grey-text text-darken-4">Web<i class="material-icons right">more_vert</i></span>
                 <p><a href="#">This is a link</a></p>
                 </div>
                 <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <span class="card-title grey-text text-darken-4">Web<i class="material-icons right">close</i></span>
                 <p>Here is some more information about this product that is only revealed once clicked on.</p>
                 </div>
                 </div>
 
     </div>
     <div id="sc" class="section">
-
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
       <div class="card horizontal" id="firstCard">
           <div class="card-image waves-effect waves-block waves-light">
           <img class="activator" src="images/filmmakers.jpg">
           </div>
           <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+          <span class="card-title activator grey-text text-darken-4">Digital Film<i class="material-icons right">more_vert</i></span>
           <p><a href="#">This is a link</a></p>
           </div>
           <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <span class="card-title grey-text text-darken-4">Digital Film<i class="material-icons right">close</i></span>
           <p>Here is some more information about this product that is only revealed once clicked on.</p>
           </div>
           </div>
 
     </div>
     <div id="sd" class="section">
+    <div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
            <div class="card horizontal" id="secondCard">
           <div class="card-image waves-effect waves-block waves-light">
           <img class="activator" src="images/design.jpg">
           </div>
           <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+          <span class="card-title activator grey-text text-darken-4">Design<i class="material-icons right">more_vert</i></span>
           <p><a href="#">This is a link</a></p>
           </div>
           <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          <span class="card-title grey-text text-darken-4">Design<i class="material-icons right">close</i></span>
+          <br>
+          <p>Billboards • magazine ads • postcards • menus • comment cards • banners • vinyl signs • fliers • referral cards • brochures • letterheads • business Cards • Posters• logos • image manipulation. </p>
           </div>
           </div>
     </div>
+    <div id="se" class="section">
+      
 
-  </div>
+
+    </div>
+
+
+
+  </div><!--fullpage end dive-->
   
   <!-- build:js scripts/vendor.js -->
   <!-- bower:js -->
@@ -104,6 +133,8 @@
   <script src="/bower_components/d3/d3.js"></script>
   <script src="/bower_components/materialize/bin/materialize.js"></script>
   <script src="/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
+  <script src="/bower_components/letteringjs/jquery.lettering.js"></script>
+  <script src="/bower_components/textillate/jquery.textillate.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
