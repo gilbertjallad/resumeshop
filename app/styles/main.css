@@ -64,6 +64,12 @@ background-color:black;
   font-size: 30px;
 }
 
+#edu{
+font-family: "script";
+  text-align: center;
+  font-size: 30px;
+
+}
 .exp{font-family: "Montserrat", sans-serif;
   font-weight: bold;
   text-align: center;
@@ -174,5 +180,119 @@ html {
   }
 }
 
+.logo{
+ font-size:25px;
+ width:75px;
+ margin-top:0px;
+ margin-left:0px;
+
+ float:left;
+}
+
+/*code pen video*/
+.yt-general {
+  background: #111;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 0;
+  font-size: 0;
+}
+.yt-cargador {
+  background: #111;
+  width: 700px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 4%;
+  background: #333;
+  border-radius: 0 0 8px 8px;
+  box-sizing: border-box;
+  box-shadow:  0 0 10px #000 inset, 0px 0 25px #666 inset;
+}
+.yt-video{
+  background: #111;
+  position: relative;
+  max-width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  background: #000;
+}
+.yt-video iframe,
+.yt-video object,
+.yt-video embed {
+  width: 1600px;
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.yt-miniaturas {
+  width: 700px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1% 4% 2% ;
+  background: #333;
+  box-sizing: border-box;
+  border-radius: 8px 8px 0 0 ;
+  box-shadow:  0 0 10px #000 inset, 0px 0 25px #666 inset;
+}
+.yt-miniaturas a {
+  position: relative;
+  display: inline-block;
+  width: 20%;
+  height: 0;
+  overflow: hidden;
+  padding: 0 0 13% 0;
+  vertical-align:top;
+  margin: 1% 0 0;
+  border: 2px solid #333;
+  box-sizing: border-box;
+  transition: .3s all;
+}
+.yt-miniaturas a:hover {
+  z-index: 2; 
+  transform: scale(1.2);
+}
+.yt-miniaturas a img {
+  width: 100%;
+  padding: 0;
+  background: transparent;
+}
+.yt-miniaturas a div {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 4px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  bottom: 0;
+  left: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Arial;
+  color: white;
+  background: #CC181E;
+  opacity: .8;
+}
+/* Símbolo cargador CSS */
+.yt-video:before {
+  content: "";
+  display: inline-block;
+  margin: 20% auto;
+  border-width: 30px;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  border-style: double;
+  border-color: #999 transparent;
+}
+@keyframes spin {100% {
+  transform: rotate(359deg);}
+}
+@media (max-width:470px) {
+  .videominiaturas a div {display: none !important;}
+}
 
 
