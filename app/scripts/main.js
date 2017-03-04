@@ -22,9 +22,10 @@ onLeave: function(index, nextIndex, direction){
 if (nextIndex == 3) {
       lineChart();
    }
-   if (nextIndex == 4) {
-
+   if (nextIndex == 5) {
+		
    }
+   
 }
 
 	});

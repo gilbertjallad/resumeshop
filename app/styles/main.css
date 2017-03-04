@@ -87,10 +87,7 @@ font-family: "script";
   stroke-width: 4px;
 }
 
-/*VIDEO GALLERY*/
 
-
-/*end of gallery*/
 
 /*background*/
 
@@ -191,7 +188,6 @@ html {
 
 /*code pen video*/
 .yt-general {
-  background: #111;
   padding: 10px;
   box-sizing: border-box;
   text-align: center;
@@ -216,7 +212,7 @@ html {
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
-  background: #000;
+
 }
 .yt-video iframe,
 .yt-video object,
