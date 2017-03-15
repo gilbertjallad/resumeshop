@@ -43,7 +43,7 @@ $(document).ready(function () {
 
 	setTimeout(function () {
 		$app.addClass('initial');
-	}, 1500);
+	}, 5500);
 
 	setTimeout(function () {
 		animation = false;
@@ -59,7 +59,7 @@ $(document).ready(function () {
 		}
 	});
 
-	$(document).on("click", ".pages__item:not(.page__item-active)", function () {
+	$(document).on('click', '.pages__item:not(.page__item-active)', function () {
 		if (animation) return;
 		var target = +$(this).attr('data-target');
 		pagination(curSlide, target);

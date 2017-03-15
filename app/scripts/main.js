@@ -105,29 +105,58 @@ d3.csv('data.csv', function(error, data) {
 	}
 
 // D3 DONUT
-var pie = new d3pie("pie", {
+var pie = new d3pie('pie', {
     header: {
       title: {
-        text: "My ecperience"
+        text: 'My ecperience'
       },
-      location: "pie-center"
+      location: 'pie-center'
     },
     size: {
-      pieInnerRadius: "80%"
+      pieInnerRadius: '80%'
     },
     data: {
-      sortOrder: "label-asc",
+      sortOrder: 'label-asc',
       content: [
-        { label: "Photography", value: 1 },
-        { label: "Management", value: 2 },
-        { label: "Sales", value: 7 },
-        { label: "Digital Video", value: 15 },
-        { label: "Graphic Design", value: 10 }
+        { label: 'Photography', value: 1 },
+        { label: 'Management', value: 2 },
+        { label: 'Sales', value: 7 },
+        { label: 'Digital Video', value: 15 },
+        { label: 'Graphic Design', value: 10 }
       ]
     }
   });
 
-
+var pie2 = new d3pie('pie2', {
+    data: {
+      content: [
+        { label: 'HTML', value: 3 },
+        { label: 'CSS', value: 3 },
+        { label: 'JAVASCRIPT', value: 1 },
+        { label: 'jQuery', value: 2 },
+        { label: 'ADOBE PREMIERE', value: 15 },
+        { label: 'ADOBE ILLUSTRATOR', value: 10 },
+        { label: 'ADOBE PHOTOSHOP', value: 10 },
+        { label: 'ADOBE INDESIGN', value: 5 },
+        { label: 'FRAMEWORKS', value: 4 }
+      ]
+    },
+    tooltips: {
+      enabled: true,
+      type: 'placeholder',
+      string: '{label}: {percentage}%',
+      styles: {
+        fadeInSpeed: 500,
+        backgroundColor: '#00cc99',
+        backgroundOpacity: 0.8,
+        color: '#ffffcc',
+        borderRadius: 4,
+        font: 'verdana',
+        fontSize: 20,
+        padding: 20
+      }
+    }
+  });
 
 
 
@@ -157,3 +186,36 @@ $('.count').each(function () {
 }, 500)
 
 
+// particles
+var width = Math.max(960, innerWidth),
+    height = Math.max(500, innerHeight);
+
+var i = 0;
+
+var svg = d3.select('body').append('svg')
+    .attr('width', width)
+    .attr('height', height);
+
+svg.append('rect')
+    .attr('width', width)
+    .attr('height', height)
+    .on('ontouchstart' in document ? 'touchmove' : 'mousemove', particle);
+
+function particle() {
+  var m = d3.mouse(this);
+
+  svg.insert('circle', 'rect')
+      .attr('cx', m[0])
+      .attr('cy', m[1])
+      .attr('r', 1e-6)
+      .style('stroke', d3.hsl((i = (i + 1) % 360), 1, .5))
+      .style('stroke-opacity', 1)
+    .transition()
+      .duration(2000)
+      .ease(Math.sqrt)
+      .attr('r', 100)
+      .style('stroke-opacity', 1e-6)
+      .remove();
+
+  d3.event.preventDefault();
+}

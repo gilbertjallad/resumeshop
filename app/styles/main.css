@@ -298,10 +298,14 @@ html {
 /*DONUT*/
 .donut{
  margin-left:300px;
- margin-top:100px; 
+ margin-top:100px;
  
 }
-
+/*mypie*/
+.mypie{
+ margin-left:300px;
+ margin-top:100px;
+}
 
 /*MY NAME*/
 
@@ -340,3 +344,19 @@ span:nth-child(odd) {
   }
 }
 
+/*particles*/
+body {
+  margin: 0;
+  background: #222;
+  min-width: 960px;
+}
+
+rect {
+  fill: none;
+  pointer-events: all;
+}
+
+circle {
+  fill: none;
+  stroke-width: 2.5px;
+}
