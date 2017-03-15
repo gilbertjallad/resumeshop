@@ -25,6 +25,10 @@ if (nextIndex == 3) {
    if (nextIndex == 5) {
 		
    }
+
+   if (nextIndex == 1) {
+   $('#opening').addClass('animated zoonIn');
+}
    
 }
 
@@ -99,6 +103,33 @@ d3.csv('data.csv', function(error, data) {
 });
 
 	}
+
+// D3 DONUT
+var pie = new d3pie("pie", {
+    header: {
+      title: {
+        text: "My ecperience"
+      },
+      location: "pie-center"
+    },
+    size: {
+      pieInnerRadius: "80%"
+    },
+    data: {
+      sortOrder: "label-asc",
+      content: [
+        { label: "Photography", value: 1 },
+        { label: "Management", value: 2 },
+        { label: "Sales", value: 7 },
+        { label: "Digital Video", value: 15 },
+        { label: "Graphic Design", value: 10 }
+      ]
+    }
+  });
+
+
+
+
 
 // Bar graph JS
 setTimeout(function start (){

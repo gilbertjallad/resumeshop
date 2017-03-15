@@ -51,18 +51,21 @@ z-index: 99;
 background-color:black;
 }
 /*stylesheets for sections*/
-#sa, #sc, #se { background: #c3c3c3; }
-#sb, #sd { background: #747474; }
+/*#sa, #sc, #se { background: #c3c3c3; }
+#sb, #sd { background: #747474; }*/
+
+#sa, #sc, #se { background: black; }
+#sb, #sd { background: black; }
 
 #sa{
 
   background: black;
 }
-#about{
+/*#about{
   font-family: "script";
   text-align: center;
   font-size: 30px;
-}
+}*/
 
 #edu{
 font-family: "script";
@@ -291,4 +294,49 @@ html {
   .videominiaturas a div {display: none !important;}
 }
 
+
+/*DONUT*/
+.donut{
+ margin-left:300px;
+ margin-top:100px; 
+ 
+}
+
+
+/*MY NAME*/
+
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
+body {
+  background-color: black;
+}
+
+.name {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.gil {
+  display: inline-block;
+  margin-left: -15px;
+  font-size: 200px;
+  line-height: 200px;
+  font-family: "Oswald", sans-serif;
+  position: relative;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: slide 2s linear infinite;
+  background-size: auto 400px;
+  background-position: left 0px;
+  background-image: linear-gradient(to bottom, #662345 0px, #662345 100px, black 100px, #661510 102px, #661510 130px, black 130px, #276e97 132px, #276e97 180px, black 180px, #af852d 182px, #af852d 200px, black 200px, #662345 202px, #662345 240px, black 240px, #661510 242px, #661510 300px, black 300px, #276e97 302px, #276e97 350px, black 350px, #af852d 352px, #af852d 398px, black 399px, black 400px);
+}
+span:nth-child(odd) {
+  top: 30px;
+  background-image: linear-gradient(to bottom, #662345 0px, #662345 70px, black 70px, #661510 72px, #661510 100px, black 100px, #276e97 102px, #276e97 150px, black 150px, #af852d 152px, #af852d 170px, black 170px, #662345 172px, #662345 210px, black 210px, #661510 212px, #661510 270px, black 270px, #276e97 272px, #276e97 320px, black 320px, #af852d 322px, #af852d 370px);
+}
+
+@keyframes slide {
+  100% {
+    background-position: left -400px;
+  }
+}
 

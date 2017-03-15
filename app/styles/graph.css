@@ -109,7 +109,7 @@ ul li:before {
 .bar:nth-of-type(2n) {
   background: #ed7669;
 }
-.bar .label {
+.bar .tag {
   font-size: .75em;
   padding: 1em;
   background: #3d3d3d;
@@ -120,7 +120,7 @@ ul li:before {
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
 }
-.bar .label.light {
+.bar .tag.light {
   background: #575757;
 }
 
